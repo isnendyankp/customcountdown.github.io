@@ -8,6 +8,7 @@ dateEl.setAttribute('min', today);
 
 // Take values from Form Input
 function updateCountdown(e) {
+    e.prevenDefault();
     console.log(e);
 }
 
