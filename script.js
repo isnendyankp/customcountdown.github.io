@@ -33,6 +33,18 @@ function updateDOM() {
     console.log(days, hours, minutes, seconds);
   }
 
+// Populate Countdown
+    countdownElTitle.textContent = `${countdownTitle}`;
+    timeElements[0].textContent = `${day}`;
+    timeElements[1].textContent = `${hour}`;
+    timeElements[2].textContent = `${minute}`;
+    timeElements[3].textContent = `${second}`;
+
+// Hide Input
+    inputContainer.hidden = true;
+// Show Countdown
+    countdownEl.hidden = false;
+
 // Take values from Form Input
 function updateCountdown(e) {
     e.preventDefault();
