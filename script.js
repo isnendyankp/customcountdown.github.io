@@ -81,6 +81,7 @@ function updateCountdown(e) {
 function reset() {
   // Hide countdowns, show input form
   countdownEl.hidden = true;
+  completeEl.hidden = true;
   inputContainer.hidden = false;
   // Stop the countdown
   clearInterval(countdownActive);
@@ -92,3 +93,4 @@ function reset() {
 // Event Listener
 countdownForm.addEventListener('submit', updateCountdown);
 countdownBtn.addEventListener('click', reset);
+completeBtn.addEventListener('click', reset);
