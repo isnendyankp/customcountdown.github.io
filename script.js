@@ -68,6 +68,7 @@ function updateCountdown(e) {
         date: countdownDate,
     };
     console.log(savedCountdown);
+    localStorage.setItem('countdown', savedCountdown);
     // Check if no date entered
     if (countdownDate === '') {
         alert('Please select a date for the countdown.');
